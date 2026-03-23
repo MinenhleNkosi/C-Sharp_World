@@ -3,20 +3,13 @@ using System;
 
 public class Solution
 {
-    public static string DescribeValue(int value)
+    public static int DoubleValue(int value)
     {
-        // Use var to store the value
-        var storeValue = value;
-        // Return a message describing what was stored
-        return "Stored: " + storeValue;
-    }
+        // Use var to store the value multiplied by 2
+        var valueStored = value * 2;
 
-    public static string DescribeText(string text)
-    {
-        // Use var to store the text
-        var storeText = text;
-        // Return a message including the text
-        return "Text is: " + storeText;
+        // Return the result
+        return valueStored;
     }
 }
 ```
