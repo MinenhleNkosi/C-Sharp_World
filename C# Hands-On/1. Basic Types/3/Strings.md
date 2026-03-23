@@ -37,7 +37,7 @@ Console.WriteLine("Goodbye!");  // Prints: Goodbye!
 
 # Visualization
 
-```memaid
+```mermaid
 flowchart TD
     A([Strings in C#]) --> B[What is a String?]
     A --> C[Declaring Strings]
