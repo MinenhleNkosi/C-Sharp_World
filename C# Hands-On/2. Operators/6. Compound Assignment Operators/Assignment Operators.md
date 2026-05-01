@@ -65,7 +65,7 @@ flowchart TD
     E --> E1[+= Add and assign]
     E --> E2[-= Subtract and assign]
     E --> E3[*= Multiply and assign]
-    E --> E4[/= Divide and assign]
+    E --> E4[/= Divide and assign/]
     E1 --> E1a[x += 3 where x = 10 - x becomes 13]
     E2 --> E2a[x -= 3 where x = 10 - x becomes 7]
     E3 --> E3a[x *= 3 where x = 10 - x becomes 30]
