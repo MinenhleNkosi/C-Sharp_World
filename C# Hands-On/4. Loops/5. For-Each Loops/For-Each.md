@@ -81,9 +81,9 @@ flowchart TD
     B2 --> B3[All items stored together in one named container]
     B3 --> B4[Every element must be the same data type]
 
-    C --> C1[Inline initializer - string[] fruits = Apple Banana Cherry]
-    C --> C2[Fixed size declaration - int[] numbers = new int[5]]
-    C --> C3[New keyword with values - new string[] Red Green Blue]
+    C --> C1[Inline initializer - string array fruits = Apple Banana Cherry]
+    C --> C2[Fixed size declaration - int array numbers = new int of size 5]
+    C --> C3[New keyword with values - new string array Red Green Blue]
     C1 --> C4[Values provided at declaration time]
     C2 --> C4a[5 slots created, all default to 0]
     C3 --> C4
@@ -92,16 +92,16 @@ flowchart TD
 
     D --> D1[Arrays use zero-based indexing]
     D1 --> D2[First element is always at index 0]
-    D2 --> D3[fruits[0] returns Apple]
-    D2 --> D4[fruits[1] returns Banana]
-    D2 --> D5[fruits[2] returns Cherry]
+    D2 --> D3[fruits at index 0 returns Apple]
+    D2 --> D4[fruits at index 1 returns Banana]
+    D2 --> D5[fruits at index 2 returns Cherry]
     D3 --> D6[Index is always one less than the position number]
     D4 --> D6
     D5 --> D6
 
     E --> E1[Use the Length property to count elements]
     E1 --> E2[fruits.Length returns 3 for a three-element array]
-    E2 --> E3[Commonly used in for loop conditions - i < array.Length]
+    E2 --> E3[Commonly used in for loop conditions - i less than array.Length]
     E3 --> E4[Prevents accessing an index that does not exist]
 
     F --> F1[Syntax: foreach type variableName in collection]
@@ -109,7 +109,7 @@ flowchart TD
     F --> F3[When to use foreach]
     F1 --> F1a[Automatically advances through every element in order]
     F1a --> F1b[No index variable needed - loop handles iteration internally]
-    F2 --> F2a[For loop - you declare i, check i < Length, increment i manually]
+    F2 --> F2a[For loop - you declare i, check i less than Length, increment i manually]
     F2 --> F2b[Foreach loop - cleaner syntax, no index management required]
     F2a --> F2c[Use for when you need the index position]
     F2b --> F2c
